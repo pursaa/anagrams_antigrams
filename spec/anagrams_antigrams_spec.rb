@@ -14,11 +14,12 @@
 # listen = silent
 
 
-require('rspec')
+equire('rspec')
 require('pry')
 require('anagrams_antigrams')
 
 describe('#match') do
   it("if word 1 and word 2 use same letters then its an anagram") do
-    expect(("s == s".match).to eq(true)
+    expect("s == s".match).to eq("These are anagrams")
   end
+end
