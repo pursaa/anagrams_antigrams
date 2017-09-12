@@ -1,13 +1,12 @@
 
-# class Letters
-#   attr_reader(:word1, :word2)
+class Letters
+  attr_reader(:word1, :word2)
 
 
-#   def initialize(word1)
-#     @word1 = word1
-#     @word2 = word2
-#   end
-# end
+  def initialize(word1, word2)
+    @word1 = word1
+    @word2 = word2
+  end
 
 public def match(word1, word2)
   if(word1 == word2)
@@ -15,6 +14,7 @@ public def match(word1, word2)
   else
     "These are not anagrams"
   end
+end
 end
 
     puts "Enter word 1"
