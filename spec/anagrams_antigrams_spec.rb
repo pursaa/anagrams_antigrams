@@ -16,11 +16,11 @@
 
 require('rspec')
 require('pry')
-require('anagrams_antigrams')
+# require('anagrams_antigrams')
 
   describe('#match') do
     it("if word 1 and word 2 use same letters then its an anagram") do
-      words = Letters.new()
-      expect(words.match("dog", "god")).to eq("These are anagrams")
+      word = Letters.new()
+      expect(word.match("dog", "god")).to eq("These are anagrams")
     end
   end
